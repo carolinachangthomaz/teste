@@ -77,6 +77,9 @@ public class TesteApplication implements CommandLineRunner{
 		app1.setContato(fromContatoDto(contato1));
 		app1Repository.save(app1);
 		
+		
+		profile.setContato(fromContatoDto(contato1));
+		profileRepository.save(profile);
 	}
 	
 	public ContatoDTO fromContatoDto(Contato<?> contato) {

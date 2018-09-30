@@ -22,7 +22,6 @@ public class App1 {
 	}
 
 	public App1(String id, TipoProjeto projeto) {
-		super();
 		this.id = id;
 		this.tipoProjeto = projeto;
 	}

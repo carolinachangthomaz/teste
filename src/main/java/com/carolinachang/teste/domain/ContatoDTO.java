@@ -12,11 +12,9 @@ public class ContatoDTO {
 	private String mensagem;
 	
 	public ContatoDTO() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public ContatoDTO(Contato<?> contato) {
-		super();
 		this.id = contato.getId();
 		this.data = contato.getData();
 		this.nome = contato.getNome();

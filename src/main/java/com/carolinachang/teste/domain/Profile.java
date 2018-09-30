@@ -11,13 +11,12 @@ public class Profile {
 	@Id
 	private String id;
 	private TipoProjeto tipoProjeto = TipoProjeto.PROFILE;
+	private ContatoDTO contato;
 	
 	public Profile() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Profile(String id, TipoProjeto projeto) {
-		super();
 		this.id = id;
 		this.tipoProjeto = projeto;
 	}
@@ -35,6 +34,13 @@ public class Profile {
 		return tipoProjeto;
 	}
 
+	public ContatoDTO getContato() {
+		return contato;
+	}
+
+	public void setContato(ContatoDTO contato) {
+		this.contato = contato;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
